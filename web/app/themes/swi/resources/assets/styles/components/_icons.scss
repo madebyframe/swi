@@ -1,0 +1,42 @@
+ul.with-icons {
+  margin-top: 2rem;
+}
+
+li.icon {
+  list-style: none;
+  position: relative;
+  margin-left: 4em;
+  line-height: 3.5;
+}
+
+li.icon::before {
+  content: " ";
+  position: absolute;
+  left: -4em;
+  top: 0.5em;
+  height: 2em;
+  width: 3em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li.icon.icon-ruler::before {
+  background-image: url(../images/01_Ruler-01.png);
+}
+
+li.icon.icon-compass::before {
+  background-image: url(../images/02_Compass-01.png);
+}
+
+li.icon.icon-paintbrush::before {
+  background-image: url(../images/06_Paint-Brush.png);
+}
+
+li.icon.icon-measuringtape::before {
+  background-image: url(../images/05_measuring-tape.png);
+}
+
+li.icon.icon-pylon::before {
+  background-image: url(../images/04_Traffic_Cone.png);
+}

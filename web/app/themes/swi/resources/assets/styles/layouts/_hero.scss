@@ -1,0 +1,41 @@
+.hero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 27vw;
+
+  h1,
+  h3 {
+    color: $white;
+    line-height: 0.85;
+  }
+
+  /*
+  p {
+    .btn {
+      &:last-child {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+  }
+  */
+}
+
+.hero-home {
+  h1 {
+    font-family: $garamond;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 24rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+}

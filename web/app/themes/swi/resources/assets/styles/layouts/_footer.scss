@@ -1,0 +1,41 @@
+footer {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  font-weight: 100;
+  font-size: 0.875rem;
+
+  section {
+    padding: 0;
+    line-height: 1.25;
+  }
+
+  .nav {
+    li {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    line-height: 2.125;
+    letter-spacing: 0.12em;
+    color: black;
+    text-decoration: none;
+  }
+
+  .social-icons {
+    margin-bottom: 1rem;
+
+    i {
+      font-size: 2.75rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .contacts > p {
+    letter-spacing: 0.12em;
+  }
+}

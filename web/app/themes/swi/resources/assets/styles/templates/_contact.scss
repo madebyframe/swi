@@ -1,0 +1,26 @@
+.col-with-divider {
+  @include media-breakpoint-up(md) {
+    text-align: right;
+    border-right: 1px solid black;
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.contacts {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  h4:not(:first-child) {
+    margin-top: 1em;
+  }
+}
+
+a.contact,
+a.contact:hover {
+  text-decoration: none;
+  color: black;
+}

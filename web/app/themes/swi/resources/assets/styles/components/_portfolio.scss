@@ -1,0 +1,43 @@
+.portfolio {
+  background-color: #edebec;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .item {
+    position: relative;
+
+    .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+      background-color: rgba(255, 255, 255, 0.85);
+      display: flex;
+
+      .portfolio-info {
+        margin: auto;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 10% 15%;
+        font-weight: 400;
+
+        h6 {
+          padding-bottom: 0.75rem;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:visited,
+    a:active {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

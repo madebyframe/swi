@@ -1,0 +1,40 @@
+.staff {
+  .col {
+    position: relative;
+
+    .staff-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+      background-color: rgba(255, 255, 255, 0.85);
+      display: flex;
+
+      .staff-info {
+        margin: auto;
+        text-align: center;
+
+        a,
+        a:hover,
+        a:focus,
+        a:visited,
+        a:active {
+          color: black;
+          text-decoration: none;
+        }
+
+        .staff-links {
+          font-size: 1rem;
+          margin-top: 0.75rem;
+
+          a {
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+}

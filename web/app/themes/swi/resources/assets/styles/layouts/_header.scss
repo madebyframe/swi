@@ -1,0 +1,75 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.banner {
+  .row {
+    padding-top: 3.84rem;
+    padding-bottom: 3.84rem;
+  }
+
+  .brand {
+    font-family: $garamond;
+    font-size: 2.8rem;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .nav-primary {
+    li {
+      padding-right: 0.65em;
+      margin-right: 0.65em;
+    }
+
+    li:not(:last-child) {
+      //content: "|";
+      //padding-left: 0.65em;
+      //font-weight: 100;
+      border-right: 1px solid #999;
+    }
+
+    a {
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 0.99rem;
+      text-decoration: none;
+      color: black;
+      padding: 0;
+      line-height: 1;
+      position: relative;
+      //margin-right: 0.65em;
+    }
+
+    .current-menu-item a {
+      font-weight: 700;
+    }
+
+    .current-menu-item a::after,
+    a:hover::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 1.5em;
+      width: 100%;
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+.page-header {
+  background-color: $blue;
+  color: white;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .subtitle {
+    letter-spacing: 0.4em;
+    padding-left: 0.4em;
+    margin-top: -0.4em;
+  }
+}
