@@ -6,9 +6,11 @@
         <div class="row no-gutters">
         @foreach($portfolio as $item)
             <div class="col-6 col-sm-4 col-md-3 item"
-                 data-overlay="portfolio-{{ $item->ID }}">
                 @if( !empty($item->post_content) && !empty($item->subtitle) )
+                data-overlay="portfolio-{{ $item->ID }}">
                 <a class="d-block" href="{{ get_permalink($item) }}" title="{{ $item->post_title }} by SWI &raquo;">
+                @else
+                    >
                 @endif
 
                     {!! get_the_post_thumbnail($item, 'square', ['class' => 'w-100 h-auto']) !!}
