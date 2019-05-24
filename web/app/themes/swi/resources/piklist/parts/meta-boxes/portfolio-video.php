@@ -6,6 +6,7 @@
 
 piklist('field', [
 	'field'     => 'pvid',
-	'type'      => 'editor',
-	'label'     => 'Video (URL)'
+	'type'      => 'url',
+	'label'     => 'Video (URL)',
+	'columns'   => 12
 ]);

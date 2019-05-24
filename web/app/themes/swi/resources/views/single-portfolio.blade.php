@@ -31,9 +31,11 @@
 
     </div>
     @if( !empty($pvid) )
-    <div class="row">
+    <div class="row py-3">
         <div class="col-12">
+            <div class="embed-responsive embed-responsive-16by9">
             {!! wp_oembed_get($pvid) !!}
+            </div>
         </div>
     </div>
     @endif
