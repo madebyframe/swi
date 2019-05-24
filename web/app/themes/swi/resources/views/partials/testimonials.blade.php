@@ -7,7 +7,7 @@
     <div class="carousel-inner">
         @foreach($testimonials as $t => $testimonial)
         <div class="carousel-item @if( $t == 0 ) active @endif"
-            style="background-image: url({{ get_the_post_thumbnail_url($testimonial->ID, 'full') }}"
+            style="background: linear-gradient( rgba(255,255,255,0.4), rgba(255,255,255,0.4) ), url({{ get_the_post_thumbnail_url($testimonial->ID, 'full') }}"
         >
             <div class="container">
                 <div class="row">
