@@ -1,7 +1,7 @@
 <footer class="content-info">
   <div class="container">
     <div class="row">
-      <div class="col-6 col-md-3 @if( is_front_page() )d-none d-md-flex @endif">
+      <div class="col-6 col-md-3 @if( is_front_page() )d-none d-md-block @endif">
         <h6>Find Out More</h6>
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
