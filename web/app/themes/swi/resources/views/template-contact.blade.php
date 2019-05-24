@@ -32,9 +32,9 @@
 @foreach( $address as $label => $addy )
 
     <h4>{{ $label }}</h4>
-    {{ implode( ', ', $addy ) }}
+    {!! implode( ', <br class="d-md-none" />', $addy ) !!}
 
-@endforeach
+    @endforeach
 
 @foreach( $hours as $label => $hour )
     <h4>{{ $label }}</h4>

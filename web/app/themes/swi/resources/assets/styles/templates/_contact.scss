@@ -1,4 +1,6 @@
 .col-with-divider {
+  text-align: center;
+
   @include media-breakpoint-up(md) {
     text-align: right;
     border-right: 1px solid black;
@@ -10,6 +12,14 @@
 }
 
 .contacts {
+  text-align: center;
+  font-size: 1.2rem;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    font-size: 1rem;
+  }
+
   h4 {
     margin-bottom: 0;
   }

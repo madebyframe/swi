@@ -1,5 +1,11 @@
 ul.with-icons {
   margin-top: 2rem;
+
+  @include media-breakpoint-down(sm) {
+    text-align: left !important;
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 li.icon {

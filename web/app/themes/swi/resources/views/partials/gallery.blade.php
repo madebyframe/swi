@@ -3,7 +3,7 @@
 <div class="magnific-gallery">
      <div class="row no-gutters">
     @foreach($gallery as $gid)
-        <div class="col-6 col-sm-4 col-md">
+        <div class="col">
             <a class="d-block" href="{{ wp_get_attachment_image_url($gid, 'full') }}">
 
                 {!! wp_get_attachment_image($gid, 'gallery-thumb', false, ['class' => 'w-100 h-auto']) !!}
@@ -15,7 +15,7 @@
     </div>
     <div class="row no-gutters">
         @foreach($gallery2 as $gid)
-            <div class="col-6 col-sm-4 col-md">
+            <div class="col">
                 <a class="d-block" href="{{ wp_get_attachment_image_url($gid, 'full') }}">
 
                     {!! wp_get_attachment_image($gid, 'gallery-thumb', false, ['class' => 'w-100 h-auto']) !!}

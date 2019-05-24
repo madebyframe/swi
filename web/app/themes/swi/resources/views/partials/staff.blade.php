@@ -1,7 +1,7 @@
 <section class="staff container-fluid px-0 content-section">
     <div class="row no-gutters">
         @foreach( $staff as $p )
-            <div class="col" data-overlay="{{ $p->ID }}">
+            <div class="col-6 col-md staff-individual" data-overlay="{{ $p->ID }}">
                 {!! get_the_post_thumbnail($p, 'square', ['class' => 'w-100 h-auto']) !!}
 
                 <div class="staff-overlay" id="{{ $p->ID }}">

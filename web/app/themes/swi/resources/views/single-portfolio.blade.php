@@ -5,7 +5,6 @@
     @include('partials.page-header')
 
 <section class="container">
-
     <div class="row">
         <div class="col-12 col-md-6 text-right">
             <h6 class="pb-0">{!! the_title() !!}</h6>
