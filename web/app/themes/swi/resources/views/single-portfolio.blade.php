@@ -6,7 +6,7 @@
 
 <section class="container">
     <div class="row">
-        <div class="col-12 col-md-6 text-right">
+        <div class="col-12 col-md-6 text-center text-md-right">
             <h6 class="pb-0">{!! the_title() !!}</h6>
             @if( !empty($location) )
             <div class="pb-3">

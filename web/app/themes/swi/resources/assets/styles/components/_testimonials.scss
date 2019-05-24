@@ -16,10 +16,10 @@
       @include media-breakpoint-up(md) {
         font-size: 1.5rem;
         font-weight: 100;
-      }
 
-      p {
-        margin-bottom: 1.75rem;
+        p {
+          margin-bottom: 1.75rem;
+        }
       }
     }
 
@@ -29,6 +29,14 @@
 
       @include media-breakpoint-up(md) {
         font-weight: 700;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .testimony,
+      .credit {
+        background-color: white;
+        padding: 0.5rem;
       }
     }
   }
