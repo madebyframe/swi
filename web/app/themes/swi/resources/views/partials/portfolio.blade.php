@@ -7,7 +7,9 @@
         @foreach($portfolio as $item)
             <div class="col-6 col-sm-4 col-md-3 item"
                  data-overlay="portfolio-{{ $item->ID }}">
+                @if( !empty($item->post_content) && !empty($item->subtitle) )
                 <a class="d-block" href="{{ get_permalink($item) }}" title="{{ $item->post_title }} by SWI &raquo;">
+                @endif
 
                     {!! get_the_post_thumbnail($item, 'square', ['class' => 'w-100 h-auto']) !!}
 
@@ -17,7 +19,10 @@
                         {!! implode(', ', wp_get_post_terms($item->ID, 'services', ['fields' => 'names'])) !!}
                         </div>
                     </div>
+
+                @if( !empty($item->post_content) && !empty($item->subtitle) )
                 </a>
+                @endif
             </div>
         @endforeach
         </div>
