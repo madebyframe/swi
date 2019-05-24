@@ -30,6 +30,13 @@
         </div>
 
     </div>
+    @if( !empty($pvid) )
+    <div class="row">
+        <div class="col-12">
+            {!! wp_oembed_get($pvid) !!}
+        </div>
+    </div>
+    @endif
 </section>
 
 <section class="container portfolio-gallery magnific-gallery">
@@ -46,7 +53,7 @@
     @endforeach
 </section>
 
-      @include('partials.gallery', ['gallery' => $pgallery])
+      {{--@include('partials.gallery', ['gallery' => $pgallery])--}}
 
       @include('partials.testimonials', ['testimonials' => $testimonials, 'i' => 'Footer'])
 

@@ -36,7 +36,11 @@ class SinglePortfolio extends Controller
 	}
 
 
+	public function pvid(){
+		return get_post_field('pvid');
+	}
 
+/*
 	public function pgallery(){
 		$gallery = get_post_meta(get_the_ID(), 'pgallery', false);
 
@@ -51,5 +55,5 @@ class SinglePortfolio extends Controller
 			return null;
 
 		return $gallery;
-	}
+	}*/
 }
