@@ -1,9 +1,11 @@
 <div id="testimonial{{ $i }}Indicators" class="testimonials carousel slide" data-ride="carousel">
+    @if( count($testimonials) > 1 )
     <ol class="carousel-indicators">
         @foreach($testimonials as $t => $testimonial)
         <li data-target="#testimonial{{ $i }}Indicators" data-slide-to="{{ $t }}" @if($t == 0) class="active" @endif></li>
         @endforeach
     </ol>
+    @endif
     <div class="carousel-inner">
         @foreach($testimonials as $t => $testimonial)
         <div class="carousel-item @if( $t == 0 ) active @endif"
