@@ -29,4 +29,8 @@ class Page extends Controller
 
 		return $portfolio;
 	}
+
+	public function pageVideo(){
+		return get_post_field('pageVideo');
+	}
 }

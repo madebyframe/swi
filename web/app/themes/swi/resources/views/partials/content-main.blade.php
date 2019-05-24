@@ -10,3 +10,11 @@
         </div>
     </div>
 </section>
+
+@if( !empty( $page_video ) )
+<section class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+        {!! wp_oembed_get($page_video) !!}
+    </div>
+</section>
+@endif

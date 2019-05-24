@@ -11,7 +11,7 @@
         <h6>Visit Our Showroom</h6>
         @php dynamic_sidebar('sidebar-footer') @endphp
       </div>
-      <div class="col-12 col-md-4 offset-md-1 contacts @if( is_front_page() )d-none d-md-flex @endif text-center text-md-left">
+      <div class="col-12 col-md-4 offset-md-1 contacts @if( is_front_page() )d-none d-md-block @endif text-center text-md-left">
         <h6>Follow Us</h6>
 
         <div class="social-icons">
