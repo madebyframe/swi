@@ -17,6 +17,8 @@
         <div class="social-icons">
 
           <a href="https://www.facebook.com/ShopSimplyWhite" target="_blank" class="social d-inline-block"><i class="fab fa-facebook-square"></i></a>
+
+          <a href="https://www.instagram.com/simplywhiteinterior/" target="_blank" class="social d-inline-block"><i class="fab fa-instagram"></i></a>
         </div>
 
         <h6>Write Us</h6>
